@@ -1,8 +1,19 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  /*background: #faebd7;*/
 }
+
+
+h1 {
+	text-align: center;
+}
+
+body {
+   background: url("../images/b3.gif");
+   background-position: center; 
+   background-repeat:   no-repeat;
+ }
 
 .label {
   font-weight: bold;
@@ -11,7 +22,7 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  /*background: aqua;*/
 }
 
 .form-group {

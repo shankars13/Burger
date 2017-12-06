@@ -34,7 +34,7 @@ function objToSql(ob) {
       arr.push(key + "=" + value);
     }
   }
-
+console.log('Inside objToSql key-val for update : ' + arr.toString())
   // translate array of strings to a single comma-separated string
   return arr.toString();
 }
@@ -53,11 +53,12 @@ var orm = {
 	},
 
 	updateOne:function(table,objColVals,condition,callBack) {
+		console.log("****** Inside orm.js -- updateOne  *********" )
 		var queryString = "UPDATE " + table;
 
 
 	    queryString += " SET ";
-	    queryString += objToSql(objColVals);
+	    queryString += "devoured="+objColVals.devoured;
 	    queryString += " WHERE ";
 	    queryString += condition;
 
