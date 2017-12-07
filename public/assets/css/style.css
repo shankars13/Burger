@@ -6,14 +6,48 @@ li {
 
 
 h1 {
+	font-size: 50px;
+	margin-bottom: 20px;
 	text-align: center;
+	color:#003300;
+	font-family: 'Baloo Bhaina', cursive;
 }
 
-body {
-   background: url("../images/b3.gif");
-   background-position: center; 
-   background-repeat:   no-repeat;
- }
+h3 {
+	font-size: 24px;
+	font-weight: 800;
+	color:red;
+}
+
+html {
+   width:100%; 
+   height:100%; 
+   background: url("../images/b3.gif") center center no-repeat;
+   z-index:0;
+   position: fixed;
+   opacity: 0.5;
+   overflow:hidden;
+}
+
+body{
+	height:100%;
+	overflow:auto;
+	font-family: 'Patua One', cursive;
+	font-size:22px;
+	color : #604020;
+}
+
+.container {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.devour-burger {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
 
 .label {
   font-weight: bold;
@@ -22,7 +56,7 @@ body {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  /*background: aqua;*/
+  background: aqua;
 }
 
 .form-group {

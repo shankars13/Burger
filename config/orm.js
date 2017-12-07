@@ -73,19 +73,20 @@ var orm = {
 
 	},
 
-	insertOne:function(table,column, value, callBack) {
+	insertOne:function(table,column, vals, callBack) {
 		var queryString = "INSERT INTO " + table;
 
 		queryString += "(";
 		queryString += column.toString();
 		queryString +=  ") ";
 		queryString +=  "VALUES (";
-		queryString +=  printQuestionMarks(value.length);
+		queryString +=  printQuestionMarks(vals.length);
 		queryString +=  ") ";
 
 		console.log(queryString);
+		console.log(vals);
 
-		connection.query(queryString,value,function(err,result) {
+		connection.query(queryString,vals,function(err,result) {
 			if (err) {
 				throw err;
 			}
