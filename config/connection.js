@@ -21,7 +21,7 @@ var mysql = require("mysql");
 // });
 //***********************************************/
 
-**************   HEROKU connection ************** 
+//**************   HEROKU connection ************** 
 var connection = mysql.createPool({
     host: 'us-cdbr-iron-east-05.cleardb.net',
     user: 'ba39536af8aeb6',
